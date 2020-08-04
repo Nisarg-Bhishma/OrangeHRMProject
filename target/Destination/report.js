@@ -7,7 +7,7 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 8474467800,
+  "duration": 6621168400,
   "status": "passed"
 });
 formatter.scenario({
@@ -53,39 +53,39 @@ formatter.match({
   "location": "MyStepDefs.user_is_on_login_page()"
 });
 formatter.result({
-  "duration": 112021500,
+  "duration": 686895800,
   "status": "passed"
 });
 formatter.match({
   "location": "MyStepDefs.userEntersUsername()"
 });
 formatter.result({
-  "duration": 169941500,
+  "duration": 1504347100,
   "status": "passed"
 });
 formatter.match({
   "location": "MyStepDefs.userEntersPassword()"
 });
 formatter.result({
-  "duration": 181459300,
+  "duration": 2278981300,
   "status": "passed"
 });
 formatter.match({
   "location": "MyStepDefs.user_click_on_LOGIN_button()"
 });
 formatter.result({
-  "duration": 1209710700,
+  "duration": 4632468600,
   "status": "passed"
 });
 formatter.match({
   "location": "MyStepDefs.user_should_be_able_to_login_successfully()"
 });
 formatter.result({
-  "duration": 323706200,
+  "duration": 1218104500,
   "status": "passed"
 });
 formatter.after({
-  "duration": 117254600,
+  "duration": 427593600,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -173,7 +173,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 7241444900,
+  "duration": 10470663300,
   "status": "passed"
 });
 formatter.scenario({
@@ -228,7 +228,7 @@ formatter.match({
   "location": "MyStepDefs.user_is_on_login_page()"
 });
 formatter.result({
-  "duration": 5090600,
+  "duration": 2196045400,
   "status": "passed"
 });
 formatter.match({
@@ -239,264 +239,4 @@ formatter.match({
     }
   ],
   "location": "MyStepDefs.userEntersInvalidUsername(String)"
-});
-formatter.result({
-  "duration": 130323300,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "",
-      "offset": 30
-    }
-  ],
-  "location": "MyStepDefs.userEntersInvalidPassword(String)"
-});
-formatter.result({
-  "duration": 106253000,
-  "status": "passed"
-});
-formatter.match({
-  "location": "MyStepDefs.user_click_on_LOGIN_button()"
-});
-formatter.result({
-  "duration": 38863000,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Password cannot be empty",
-      "offset": 51
-    }
-  ],
-  "location": "MyStepDefs.userShouldNotBeAbleToLoginSuccessfullyAnd(String)"
-});
-formatter.result({
-  "duration": 30894900,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 71666600,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 7311675800,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 22,
-  "name": "User should not be able to login successfully with invalid credentials",
-  "description": "",
-  "id": "login-feature;user-should-not-be-able-to-login-successfully-with-invalid-credentials;;3",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 11,
-      "name": "@nagative"
-    }
-  ]
-});
-formatter.step({
-  "line": 13,
-  "name": "User is on login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 14,
-  "name": "User enters invalid Username \"\"",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 15,
-  "name": "User enters invalid Password \"admin123\"",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 16,
-  "name": "User click on LOGIN button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 17,
-  "name": "User should not be able to login successfully and \"Username cannot be empty\"",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "MyStepDefs.user_is_on_login_page()"
-});
-formatter.result({
-  "duration": 5561400,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "",
-      "offset": 30
-    }
-  ],
-  "location": "MyStepDefs.userEntersInvalidUsername(String)"
-});
-formatter.result({
-  "duration": 135936800,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "admin123",
-      "offset": 30
-    }
-  ],
-  "location": "MyStepDefs.userEntersInvalidPassword(String)"
-});
-formatter.result({
-  "duration": 141725100,
-  "status": "passed"
-});
-formatter.match({
-  "location": "MyStepDefs.user_click_on_LOGIN_button()"
-});
-formatter.result({
-  "duration": 44389100,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Username cannot be empty",
-      "offset": 51
-    }
-  ],
-  "location": "MyStepDefs.userShouldNotBeAbleToLoginSuccessfullyAnd(String)"
-});
-formatter.result({
-  "duration": 35822600,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 56905100,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 7236120000,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 23,
-  "name": "User should not be able to login successfully with invalid credentials",
-  "description": "",
-  "id": "login-feature;user-should-not-be-able-to-login-successfully-with-invalid-credentials;;4",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 11,
-      "name": "@nagative"
-    }
-  ]
-});
-formatter.step({
-  "line": 13,
-  "name": "User is on login page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 14,
-  "name": "User enters invalid Username \"ADMIN\"",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 15,
-  "name": "User enters invalid Password \"Admin123\"",
-  "matchedColumns": [
-    1
-  ],
-  "keyword": "And "
-});
-formatter.step({
-  "line": 16,
-  "name": "User click on LOGIN button",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 17,
-  "name": "User should not be able to login successfully and \"Invalid credentials\"",
-  "matchedColumns": [
-    2
-  ],
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "MyStepDefs.user_is_on_login_page()"
-});
-formatter.result({
-  "duration": 4294400,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "ADMIN",
-      "offset": 30
-    }
-  ],
-  "location": "MyStepDefs.userEntersInvalidUsername(String)"
-});
-formatter.result({
-  "duration": 127581900,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Admin123",
-      "offset": 30
-    }
-  ],
-  "location": "MyStepDefs.userEntersInvalidPassword(String)"
-});
-formatter.result({
-  "duration": 208578700,
-  "status": "passed"
-});
-formatter.match({
-  "location": "MyStepDefs.user_click_on_LOGIN_button()"
-});
-formatter.result({
-  "duration": 524210200,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "Invalid credentials",
-      "offset": 51
-    }
-  ],
-  "location": "MyStepDefs.userShouldNotBeAbleToLoginSuccessfullyAnd(String)"
-});
-formatter.result({
-  "duration": 32656300,
-  "status": "passed"
-});
-formatter.after({
-  "duration": 89279800,
-  "status": "passed"
-});
 });

@@ -1,7 +1,9 @@
 package org.example;
 
+import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -35,9 +37,12 @@ public class BrowserManager extends Util {
                     e.printStackTrace();
                 }
             } else if (browser.equalsIgnoreCase("firefox")) {
+                FirefoxOptions browserOptions = new FirefoxOptions();
                 DesiredCapabilities capabilities = DesiredCapabilities.firefox();
-                capabilities.setCapability("platformName", "Windows 10");
-                capabilities.setCapability("browserVersion", "79.0");
+                MutableCapabilities sauceOptions = new MutableCapabilities();
+                browserOptions.setCapability("platformName", "Windows 8.1");
+                browserOptions.setCapability("browserVersion", "latest");
+                browserOptions.setCapability("sauce:options", sauceOptions);
 
                 try {
                     driver = new RemoteWebDriver(new URL(URL), capabilities);
@@ -57,7 +62,7 @@ public class BrowserManager extends Util {
                 System.out.println("browser name is empty" + browser);
             }
 
-            //applying implicitly wait of 30 sec to the driver instance
+            //applying implicitly wait of 60 sec to the driver instance
             driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
             //open the URL
             driver.get(loadProperty.getProperty("url"));
